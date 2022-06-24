@@ -1,4 +1,4 @@
-import FormulaParse
+import FormulaParser
 
 if __name__ == "__main__":
     input_formula_001 = """=IF(A1<10,SUM(B2:B10),100-MAX(10,B11))"""
@@ -17,5 +17,5 @@ if __name__ == "__main__":
     input_formula_0014 = """=IF(IF(A1<A2,10,20)<10,10,20)"""
     input_formula = input_formula_004
 
-    output = FormulaParse.get_formula_token_list(input_formula)
+    output = FormulaParser.get_formula_token_list(input_formula)
     print(output)
